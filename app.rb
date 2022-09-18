@@ -1,8 +1,3 @@
-# make function that takes a string and shifts it alphabetically down as many times
-# as the modifier specifies
-
-# check if the string is capitalized by setting a variable to true if needed
-
 def caesar_cypher(string, modifier = nil)
   array1 = string.chars.map{|x| x.ord}
   char_array = array1.map{|x| (x >= 97 && x <= 122) || (x >= 65 and x <= 90) ? x : x.chr}
